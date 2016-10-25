@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="NHTIYearPlannerSkeleton.YearCourseEntry"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NHTIYearPlannerSkeleton"
+             mc:Ignorable="d" 
+             d:DesignHeight="32" d:DesignWidth="200">
+    <Grid>
+        <Border BorderThickness="1,0,1,1" BorderBrush="Black">
+            <Grid Background="White" Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="btnDelete" Margin="1, 8, 1, 8" Click="btnDelete_Click">
+                    <Image Name="imgDelete" Source="icon-delete.png"/>
+                </Button>
+                <Border BorderThickness="1,0,0,0" BorderBrush="Black" Grid.Column="1">
+                    <CheckBox Name="cbDone" VerticalAlignment="Center" Margin="1,0,1,0"/>
+                </Border>
+                <Border BorderThickness="1,0,1,0" BorderBrush="Black" Grid.Column="2">
+                    <Label Name="lblCourseName" Content="Course Name" VerticalAlignment="Center" />
+                </Border>
+                <Label Name="lblNumCredits" Content="3.0" VerticalAlignment="Center" Grid.Column="3"/>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
