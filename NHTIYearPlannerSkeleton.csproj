@@ -55,8 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="FormNHTIYearPlanner.xaml.cs">
-      <DependentUpon>FormNHTIYearPlanner.xaml</DependentUpon>
+    <Compile Include="FormNHTIPlanner.xaml.cs">
+      <DependentUpon>FormNHTIPlanner.xaml</DependentUpon>
     </Compile>
     <Compile Include="SemesterCourseEntry.xaml.cs">
       <DependentUpon>SemesterCourseEntry.xaml</DependentUpon>
@@ -64,7 +64,7 @@
     <Compile Include="SemesterEntry.xaml.cs">
       <DependentUpon>SemesterEntry.xaml</DependentUpon>
     </Compile>
-    <Page Include="FormNHTIYearPlanner.xaml">
+    <Page Include="FormNHTIPlanner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

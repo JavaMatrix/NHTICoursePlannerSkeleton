@@ -18,19 +18,19 @@ namespace NHTIYearPlannerSkeleton
     /// <summary>
     /// Interaction logic for YearCourseEntry.xaml
     /// </summary>
-    public partial class YearCourseEntry : UserControl
+    public partial class SemesterCourseEntry : UserControl
     {
-        public Panel Parent { get; set; }
+        public Panel MyParent { get; set; }
 
-        public YearCourseEntry()
+        public SemesterCourseEntry()
         {
             InitializeComponent();
-            Parent = null;
+            MyParent = null;
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            Parent?.Children.Remove(this);
+            MyParent?.Children.Remove(this);
         }
     }
 }
